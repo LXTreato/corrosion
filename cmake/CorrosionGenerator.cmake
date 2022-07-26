@@ -54,7 +54,7 @@ function(_generator_parse_platform manifest version target)
             set(is_windows_gnu TRUE)
 
             if(NOT COR_NO_STD)
-              list(APPEND libs "gcc_eh" "pthread")
+              list(APPEND libs "pthread")
             endif()
         endif()
 
