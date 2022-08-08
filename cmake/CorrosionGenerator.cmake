@@ -75,7 +75,7 @@ function(_generator_parse_platform manifest version target)
         endif()
     elseif(os STREQUAL "linux")
         if(NOT COR_NO_STD)
-           list(APPEND libs "dl" "rt" "pthread" "gcc_s" "c" "m" "util")
+           list(APPEND libs "dl" "c" "m")
         endif()
     endif()
 
